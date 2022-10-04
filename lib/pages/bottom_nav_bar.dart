@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latest_update/pages/categories_page.dart';
 import 'package:latest_update/pages/home_page.dart';
+import 'package:latest_update/pages/read_details_article.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({Key? key, required this.index}) : super(key: key);
@@ -36,12 +37,13 @@ class BottomNavBar extends StatelessWidget {
               label: 'Home'),
           BottomNavigationBarItem(
               icon: Container(
-                margin: EdgeInsets.only(right: 50),
+                margin: const EdgeInsets.only(right: 50),
                 child: IconButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, DetailArticlePage.routeName);
                     print('No profile screen create yet');
                   },
-                  icon: Icon(Icons.person),
+                  icon: const Icon(Icons.person),
                 ),
               ),
               label: 'Home')

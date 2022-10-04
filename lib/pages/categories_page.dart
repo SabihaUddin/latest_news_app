@@ -26,7 +26,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
             ),
           ),
         ),
-        bottomNavigationBar: const BottomNavBar(index: 0),
+        bottomNavigationBar: const BottomNavBar(index: 1),
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -56,7 +56,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     ),
                     border:OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.blue)
+                      borderSide: BorderSide.none
                     ) ,
                   ),
 
