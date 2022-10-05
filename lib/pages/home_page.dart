@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                   ]),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Padding(
@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
             height: 5,
           ),
           Container(
-            margin: EdgeInsets.only(left: 13),
+            margin:const EdgeInsets.only(left: 13),
             height: 220,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
